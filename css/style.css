@@ -120,11 +120,13 @@ max-height: 100vh;
   flex-direction: row;
   padding: 20px;
   align-items: center;
+  color: #000000;
 
 }
 
 .callTo p {
   width: 50%;
+  color: #000000;
 }
 
 .call {
