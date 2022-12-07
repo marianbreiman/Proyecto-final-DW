@@ -339,3 +339,7 @@ animation: texto 15s infinite linear alternate;
 	75% {}
 	100% {color: blue; opacity: 1}
   }
+
+
+  .artista img { width: 100%; filter: saturate(0); border: 4px solid black; border-radius: 20px;} 
+.artista img:hover { filter: saturate(1); transform: scale(1.1); transition: 1s;} 
