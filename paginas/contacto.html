@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manía</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    
+  </head>
+  <body>
+
+      <header>
+
+        <div class="logo">
+          <img src="../Img/logo.png" alt="logo" class="logo" /> 
+          <!--Al tutor que corresponda, me gustaria saber como hacer que una imagen tambien sea un link, se que es con <a href pero no estoy seguro del todo de la combinación con el img!-->
+        </div>
+          <nav>
+            <ul class="nav_principal">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Quienes somos.html">Quiénes somos</a>
+                </li>
+                <li>
+                    <a href="Animes.html">Animes</a>
+                </li>
+                <li>
+                    <a href="Manga.html">Manga</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <form action="https://formspree.io/f/mdojprey" method="POST">
+      <fieldset>
+          <legend>Datos básicos</legend>
+          <div>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre">
+          </div>
+          <div>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email">
+          </div>
+      </fieldset>
+      <div>
+          <label>Opciones</label><br>
+          <input type="checkbox" name="opcion1" value="Opcion 1">Opcion 1
+          <input type="checkbox" name="opcion2" value="Opcion 2">Opcion 2
+          <input type="checkbox" name="opcion3" value="Opcion 3">Opcion 3
+          <input type="checkbox" name="opcion4" value="Opcion 4">Opcion 4
+          <input type="checkbox" name="opcion5" value="Opcion 5">Opcion 5
+      </div>
+      <div>
+          <label>Tiempo</label>
+          <select name="tiempo">
+              <option value="corto plazo">Lo antes posible</option>
+              <option value="mediano plazo">Mediano Plazo</option>
+              <option value="largo plazo">Largo plazo</option>
+          </select>
+      </div>
+      <div>
+          <label for="">Comentarios</label><br>
+          <textarea name="comentarios"></textarea>
+      </div>
+      <input type="submit" value="Consultar">
+  </form>
+ 
+
+
+  <footer>
+    <div class="logoFooter">
+      <img src="../Img/logo.png" alt="logo" class="logoFooter" />
+      <h4>Manía</h4>
+    </div>
+ 
+    <nav>
+      <ul class="nav_Footer">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="Quienes somos.html">Quiénes somos</a>
+        </li>
+        <li>
+          <a href="Animes.html">Animes</a>
+        </li>
+        <li>
+          <a href="Manga.html">Manga</a>
+        </li>
+        <li>
+          <a href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    
+    <ul class="nav_icon">
+      <li>
+        <a href="#"> <img src="../img/facebook.png" alt=""  class="icono"></a>
+      </li>
+      <li>
+        <a href="#"> <img src="../img/insta.png" alt=""  class="icono"></a>
+      </li>
+      <li>
+        <a href="#"> <img src="../img/twitter.png" alt=""  class="icono"></a>
+      </li>
+    </ul>
+
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2022 Maníaverse, Inc. All rights reserved, Mariano Breiman.</p>
+
+    </div>
+</div>
+
+
+
+  </footer>
+
+
+
+  </body>
+</html>
