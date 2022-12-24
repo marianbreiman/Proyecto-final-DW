@@ -1,0 +1,1248 @@
+  @import "estructura";
+  
+  a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+  }
+  
+
+  .pantalla {
+    background-color: #000000;
+    width: 100%;
+   
+  }
+  
+  
+  .botones {
+    display: flex;
+    flex-direction: row;
+  justify-content: center;
+  }
+  .botones a {
+    font-size: 14px;
+    padding: 10px;
+    background-color: aliceblue;
+    color: black;
+    margin: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+    
+  .Somos h1 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+  }
+  
+  .Somos h4 {
+    background-image: linear-gradient(to right, #ffa0a0, #9e0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0px 0px 10px 0px;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  
+  .Somos p {
+    max-width: 40%;
+    color: rgb(255, 255, 255);
+  }
+  
+  .Somos2 {
+    max-height: fit-content;
+  }
+  
+  .Somos2 h4 {
+    padding: 0px 0px 10px 0px;
+    font-size: 50px;
+    font-weight: bolder;
+    animation: textin 10s infinite linear alternate;
+  }
+  
+  @keyframes textin {
+      0% {color: #ffffff; opacity: 1;}
+      25% {}
+      50% {color: #ffffff00; opacity: 1;}
+      75% {}
+      100% {color: rgb(255, 255, 255); opacity: 1}
+    }
+  
+  .Somos2 p {
+    max-width: 100%;
+    color: rgb(255, 255, 255);
+  
+  }
+  
+    
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+  
+  
+  .animacione {
+    background-image: url(../img/Anime.jpg);
+    background-attachment:fixed;
+    background-size: 200% 100%;
+    min-height: 100vh;
+    animation: fondo 25s infinite linear alternate;
+  }
+  
+  @keyframes fondo {
+    from {
+        background-position:  left;
+    }
+  
+    to {
+        background-position: right ;
+    }
+  }
+  
+  
+  .quienesSomos {
+    background-color: black; 
+    border-radius: 20px; 
+    opacity: 90%;
+    margin: auto;
+    padding: 60px;
+    width: 50%;
+    align-items: center;
+    display: flex;
+  flex-direction: column;
+  }
+  .quienesSomos h2{
+  color: #fff;
+  animation: texto 15s infinite linear alternate;
+  }
+  
+  @keyframes texto {
+      0% {color: rgb(255, 255, 255); opacity: 1;}
+      25% {}
+      50% {color: red; opacity: 1;}
+      75% {}
+      100% {color: blue; opacity: 1}
+    }
+  
+  .artista {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+    .artista img { width: 100%; filter: saturate(0); border: 2px solid grey; border-radius: 20px;} 
+  .artista img:hover { filter: saturate(1); transform: scale(1.1); transition: 2s;} 
+  
+  main h2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .card-title {
+    color: #000000;
+  }
+  
+  .card-text {
+    color: #000000;
+  }
+  
+  
+  .mainQuienes {
+    background-color: #000000;
+  }
+
+  /* ANIME DEL DIA/SEMANA */
+  
+  
+  .grid-section {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 50px auto;
+    grid-template-areas: 
+      "title1 title2"
+      "section1 section2";
+  padding-top: 50px; 
+  padding-left: 50px;
+  padding-right: 50px;
+    background-color: #000000;
+  }
+  
+  .grid-section .title-d {
+    grid-area: title1;
+    font-size: 25px;
+    color: whitesmoke;
+  }
+  
+  .grid-section .section-day {
+    grid-area: section1;
+  }
+  
+  .grid-section .title-w {
+    grid-area: title2;
+    font-size: 25px;
+    color: whitesmoke;
+  }
+  
+  .grid-section .section-week {
+    grid-area: section2;
+  }
+  
+  .section-day,
+  .section-week {
+    background-color: #181818;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 605px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+  }
+   
+  
+  /*   IMG PORTADA   */
+  .img-portada {
+    width: 240px;
+    height: 360px;
+    background-color: transparent;
+    float: left;
+    
+    background-image: url("../img/kekkai-sensen.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    
+    overflow: hidden;
+  } 
+  
+  .img-portada a img { 
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+   .img-portada::before {
+    position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 2;
+      display: block;
+      content: '';
+      width: 50%;
+      height: 100%;
+      background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+      -webkit-transform: skewX(-25deg);
+      transform: skewX(-25deg);
+  }
+   
+   
+  .img-portada:hover::before {
+      -webkit-animation: shine .75s;
+      animation: shine .75s;
+    cursor: pointer;
+  }
+  @-webkit-keyframes shine {
+      100% {
+          left: 125%;
+      }
+  }
+  @keyframes shine {
+      100% {
+          left: 125%;
+      }
+  } 
+  
+  /*   INFO   */
+  .anime-info {
+    width: 50%;
+    padding-left: 15px;
+  }
+  
+  .anime-info h2 a {
+    color: #e2e2e2;
+  }
+  .list-info { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-weight: lighter;
+    font-size: 11px;
+    color: #c5c5c5;
+    user-select: none;
+    padding: 3px 0 3px;
+  }
+  .list-info div {
+    padding: 3px;
+  }
+  
+  i {
+    margin-right: 5px;
+  }
+  
+  .anime-info p {
+    font-size: 12px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ANIME INFO */
+  .serie {
+    background: linear-gradient(to top, #000000, black, rgba(0, 0, 0, 0.60) )
+  }
+  .serie::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/odd-taxi-fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    z-index: -1;
+    
+  }
+  
+  .serie::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, #171717, transparent);
+    z-index: -1;
+  
+  }
+  .caps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 130px 0 130px;
+  }
+  
+  .caps .img-portada {
+  position: relative;
+  height: 480px;
+  width: 440px;
+  }
+  
+  .caps .img-portada img {
+    width: 320px;
+    height: 480px;
+    object-fit: cover;
+  }
+  
+  .caps .img-portada a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 10000;
+  }
+  
+  .caps .img-portada a h1 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Ubuntu", "Roboto", sans-serif;
+  color: #E2E2E2;
+  }
+  
+  .caps .img-portada a img {
+  width: 50px;
+  height: 50px;
+  }
+  
+  .caps .img-portada a:hover {
+  opacity: 1;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .caps .info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 480px;
+  }
+  
+  .caps .info h1 {
+    margin: 5px 0 10px 35px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #E2E2E2;
+  }
+  
+  .caps .info p {
+    margin: 5px 0 10px 35px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #F4F4F4;
+    line-height: 1.6;
+  }
+  
+  .caps .info .genero ul {
+    margin: 10px 0 10px 35px;
+  }
+  
+  .caps .info .genero ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .caps .info .genero ul li a {
+    text-decoration: none;
+    color: #F4F4F4;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 15px;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  .caps .info .genero ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .caps .info .genero ul li a:active {
+  background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .caps .info .infoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px 0px 10px 35px;
+  }
+  
+  .caps .info .infoBox .adicional {
+    margin-right: 90px;
+  }
+  
+  .caps .info .infoBox .secuela {
+    margin-right: 90px;
+  }
+  
+  .caps .info .infoBox .adicional h2,
+  .caps .info .infoBox .secuela h2,
+  .caps .info .infoBox .title-alternative h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E2E2E2;
+  }
+  
+  .caps .info .infoBox .adicional ul,
+  .caps .info .infoBox .secuela ul,
+  .caps .info .infoBox .title-alternative ul {
+    margin: 10px 50px 0 0;
+  }
+  
+  .caps .info .infoBox .adicional ul li,
+  .caps .info .infoBox .secuela ul li,
+  .caps .info .infoBox .title-alternative ul li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #E8E8E8;
+    margin-top: 10px;
+  }
+  
+  .caps .info .infoBox .secuela ul li a {
+    color: #E8E8E8;
+  }
+  
+  .caps .info .infoBox .adicional ul li img,
+  .caps .info .infoBox .secuela ul li img,
+  .caps .info .infoBox .title-alternative ul li img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .caps .info .infoBox .adicional ul li,
+  .caps .info .infoBox .secuela ul li,
+  .caps .info .infoBox .title-alternative ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .caps .info .infoBox .secuela ul li a {
+    color: #E8E8E8;
+  }
+  
+  
+  /* EPISODIOS */
+  
+  .episodios {
+  margin: 35px 130px 0 130px;
+  }
+  
+  .episodios h1 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #E2E2E2;
+  }
+  
+  .episodios h2 {
+    color: #E2E2E2;
+  }
+  
+  .episodios .grid-episodios {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px 50px;
+  color: #E2E2E2;
+  }
+  
+  
+  .episodios .grid-episodios a {
+  text-decoration: none;
+  }
+  
+  .episodios .grid-episodios .anime-img-1 {
+  background-image: url(../img/cap1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-img-2 {
+  background-image: url(../img/cap2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-img-3 {
+  background-image: url(../img/cap3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-img-4 {
+  background-image: url(../img/cap4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-img-5 {
+  background-image: url(../img/cap5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-img-6 {
+  background-image: url(../img/cap6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-img-7 {
+  background-image: url(../img/cap7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-img-8 {
+  background-image: url(../img/cap8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-img-9 {
+  background-image: url(../img/cap9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-img-10 {
+  background-image: url(../img/cap10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-img-11 {
+  background-image: url(../img/cap11.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-img-12 {
+  background-image: url(../img/cap12.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-img-13 {
+  background-image: url(../img/cap13.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 115px;
+  }
+  
+  .episodios .grid-episodios .anime-descripcion h2 {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 500;
+  font-family: "Ubuntu", "Roboto", sans-serif;
+  }
+  
+  
+  .episodios .grid-episodios .anime-section .anime-img-1::before,
+  .episodios .grid-episodios .anime-section .anime-img-2::before,
+  .episodios .grid-episodios .anime-section .anime-img-3::before,
+  .episodios .grid-episodios .anime-section .anime-img-4::before,
+  .episodios .grid-episodios .anime-section .anime-img-5::before,
+  .episodios .grid-episodios .anime-section .anime-img-6::before,
+  .episodios .grid-episodios .anime-section .anime-img-7::before,
+  .episodios .grid-episodios .anime-section .anime-img-8::before,
+  .episodios .grid-episodios .anime-section .anime-img-9::before,
+  .episodios .grid-episodios .anime-section .anime-img-10::before,
+  .episodios .grid-episodios .anime-section .anime-img-11::before,
+  .episodios .grid-episodios .anime-section .anime-img-12::before,
+  .episodios .grid-episodios .anime-section .anime-img-13::before {
+  content: '';
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  opacity: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  }
+  .episodios .grid-episodios .anime-section .anime-img-1::after,
+  .episodios .grid-episodios .anime-section .anime-img-2::after,
+  .episodios .grid-episodios .anime-section .anime-img-3::after,
+  .episodios .grid-episodios .anime-section .anime-img-4::after,
+  .episodios .grid-episodios .anime-section .anime-img-5::after,
+  .episodios .grid-episodios .anime-section .anime-img-6::after,
+  .episodios .grid-episodios .anime-section .anime-img-7::after,
+  .episodios .grid-episodios .anime-section .anime-img-8::after,
+  .episodios .grid-episodios .anime-section .anime-img-9::after,
+  .episodios .grid-episodios .anime-section .anime-img-10::after,
+  .episodios .grid-episodios .anime-section .anime-img-11::after,
+  .episodios .grid-episodios .anime-section .anime-img-12::after,
+  .episodios .grid-episodios .anime-section .anime-img-13::after {
+  content: '';
+  position: relative;
+  top: -50%;
+  left: 50%;
+  width: 50px;
+  height: 50px; 
+  transform: translate(-50%, -50%);
+  background: url(../img/play-button.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  }
+  
+  .episodios .grid-episodios .anime-section:hover .anime-img-1::before,
+  .episodios .grid-episodios .anime-section:hover .anime-img-2::before,
+  .episodios .grid-episodios .anime-section:hover .anime-img-3::before,
+  .episodios .grid-episodios .anime-section:hover .anime-img-4::before,
+  .episodios .grid-episodios .anime-section:hover .anime-img-5::before,
+  .episodios .grid-episodios .anime-section:hover .anime-img-6::before,
+  .episodios .grid-episodios .anime-section:hover .anime-img-7::before,
+  .episodios .grid-episodios .anime-section:hover .anime-img-8::before,
+  .episodios .grid-episodios .anime-section:hover .anime-img-9::before,
+  .episodios .grid-episodios .anime-section:hover .anime-img-10::before,
+  .episodios .grid-episodios .anime-section:hover .anime-img-11::before,
+  .episodios .grid-episodios .anime-section:hover .anime-img-12::before,
+  .episodios .grid-episodios .anime-section:hover .anime-img-13::before {
+  opacity: 0.5;
+  }
+  
+  .episodios .grid-episodios .anime-section:hover .anime-img-1::after,
+  .episodios .grid-episodios .anime-section:hover .anime-img-2::after,
+  .episodios .grid-episodios .anime-section:hover .anime-img-3::after,
+  .episodios .grid-episodios .anime-section:hover .anime-img-4::after,
+  .episodios .grid-episodios .anime-section:hover .anime-img-5::after,
+  .episodios .grid-episodios .anime-section:hover .anime-img-6::after,
+  .episodios .grid-episodios .anime-section:hover .anime-img-7::after,
+  .episodios .grid-episodios .anime-section:hover .anime-img-8::after,
+  .episodios .grid-episodios .anime-section:hover .anime-img-9::after,
+  .episodios .grid-episodios .anime-section:hover .anime-img-10::after,
+  .episodios .grid-episodios .anime-section:hover .anime-img-11::after,
+  .episodios .grid-episodios .anime-section:hover .anime-img-12::after,
+  .episodios .grid-episodios .anime-section:hover .anime-img-13::after {
+  opacity: 1;
+  }
+  
+  
+  
+  
+  /* RELACIONADOS */
+  
+  .relacionados {
+  margin: 35px 130px 1px 130px;
+  }
+  
+  .relacionados h1 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Ubuntu", "Roboto", sans-serif;
+  color: #E2E2E2;
+  }
+  
+  .relacionados h1 i {
+  color: #FB3640;
+  }
+  
+  .relacionados .grid-relacionados {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 50px;
+  }
+  
+  .relacionados .grid-relacionados .portada-relacionados{
+  text-decoration: none;
+  }
+  
+  .relacionados .grid-relacionados .portada-relacionados .portada-img-1 {
+  background-image: url(../img/death-note-portada.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 415px;
+  }
+  
+  .relacionados .grid-relacionados .portada-relacionados .portada-img-2 {
+  background-image: url(../img/higurashi-no-naku-koro-portada.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 415px;
+  }
+  
+  .relacionados .grid-relacionados .portada-relacionados .portada-img-3 {
+  background-image: url(../img/yakusoku-no-neverland-portada.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 415px;
+  }
+  
+  .relacionados .grid-relacionados .portada-relacionados .portada-img-4 {
+  background-image: url(../img/boku-dake-ga-inai-machi-portada.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 415px;
+  }
+  
+  
+  
+  
+  
+  .relacionados .grid-relacionados .portada-relacionados .portada-descripcion h2 {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Ubuntu", "Roboto", sans-serif;
+  color: #E8E8E8;
+  }
+  
+  .relacionados .grid-relacionados .portada-relacionados .portada-descripcion p {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Ubuntu", "Roboto", sans-serif;
+  color: #E8E8E8;
+  }
+  
+  
+  
+  
+  /*   IMG PORTADA   */
+  .img-portada {
+    width: 240px;
+    height: 360px;
+    background-color: transparent;
+    float: left;
+    
+    background-image: url("../img/kekkai-sensen.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    
+    overflow: hidden;
+  } 
+  
+  .img-portada a img { 
+    width: 100%;
+    object-fit: cover;
+  }
+  
+   .img-portada::before {
+    position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 2;
+      display: block;
+      content: '';
+      width: 50%;
+      height: 100%;
+      background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+      -webkit-transform: skewX(-25deg);
+      transform: skewX(-25deg);
+  }
+   
+   
+  .img-portada:hover::before {
+      -webkit-animation: shine .75s;
+      animation: shine .75s;
+    cursor: pointer;
+  }
+  @-webkit-keyframes shine {
+      100% {
+          left: 125%;
+      }
+  }
+  @keyframes shine {
+      100% {
+          left: 125%;
+      }
+  } 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*  RESPONSIVO  */
+  
+  @media (max-width: 1300px) {
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+          grid-template-areas:
+          "title1"
+          "section1"
+          "title2"
+          "section2";
+      margin: 0 130px;
+    }
+    .section-day, .section-week {
+      width: 100%;
+    }
+    .anime-info {
+      width: 80%; 
+  }
+  .img-portada {
+    width: 150px;
+    height: 225px;
+  }.section-day, .section-week {
+    width: 100%;
+    height: 250px;
+  }
+  .grid-section h1.title-w {
+    margin: 20px 0;
+  }
+  .new-1 {
+    height: 500px;
+  }
+  }
+  
+  @media (max-width: 1170px) { 
+    .header {
+      margin: 25px 50px 0 50px;
+    }
+    .video-section {
+      margin: 0 50px;
+    } 
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+          grid-template-areas:
+          "title1"
+          "section1"
+          "title2"
+          "section2";
+      margin: 0 50px;
+  }
+  .grid-section .title-d {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .section-day, .section-week {
+    margin: 0 0;
+    width: 100%;
+    min-height: 480px;
+    padding: 20px;
+  }
+  .grid-section .title-w {
+    grid-area: title2;
+    margin-left: 0px;
+    margin-bottom: 0;
+  }
+  .img-portada {
+    width: 30%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+  }
+  .img-portada div a img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .anime-info {
+    width: 70%;
+    height: 368px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .anime-info h2 {
+    margin-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 10px;
+  }
+  .anime-info p {
+    margin-left: 0;
+    font-size: 15px;
+    padding-right: 0px;
+    line-height: 25px;
+  }
+  .list-info {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .img-carousel {
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  .img-carousel div {
+    width: 195px;
+    min-height: 110px;
+  }
+  
+  .list-genero {
+    margin-top: 20px;
+  }
+  
+  .list-genero li {
+    font-size: 15px;
+  }
+  .grid-section .title-w { 
+    margin: 40px 0 10px 0;
+  }
+  .grid-new {
+    margin: 0 50px;
+    margin-bottom: 60px;
+  }
+  
+  }
+  
+  @media (max-width: 1009px) { 
+    .container-video-links {
+      grid-template-columns: repeat(auto-fill, minmax(70px, 250px));
+      gap: 10px;
+    }
+    .new-1 {
+      height: 530px;
+  }
+  }
+  
+  @media (max-width: 960px) { 
+    .section-day, .section-week {
+      margin: 0 0;
+      width: auto;
+      min-height: 390px;
+      padding: 20px;
+  }
+  .new-1 {
+    height: 600px;
+  }
+  }
+  
+  @media (max-width: 887px) { 
+    .container-video-links {
+      grid-template-columns: repeat(auto-fill, minmax(70px, 234px));
+      gap: 20px;
+    }
+    .img-new1 div a img {
+      width: 100%;
+  }
+  .grid-new {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  }
+  
+  @media (max-width: 859px) { 
+    .container-video-links {
+      grid-template-columns: repeat(auto-fit, minmax(70px, 210px));
+      gap: 5px;
+    }
+    .section-day, .section-week {
+      margin: 0 0;
+      width: auto;
+      min-height: 440px;
+      padding: 20px;
+  }
+  
+  }
+  
+  @media (max-width: 757px) { 
+    .container-video-links {
+      grid-template-columns: repeat(auto-fit, minmax(70px, 260px));
+      gap: 5px;
+    }
+  
+  }
+  
+  @media (max-width: 642px) { 
+    .container-video-links {
+      grid-template-columns: repeat(auto-fit, minmax(70px, 245px));
+      gap: 10px;
+    }
+    .section-day, .section-week {
+      margin: 0 0;
+      width: auto;
+      min-height: 530px;
+      padding: 20px;
+  }
+  
+  }
+  
+  @media (max-width: 612px) { 
+    .container-video-links {
+      grid-template-columns: repeat(auto-fit, minmax(70px, 100%));
+      gap: 30px;
+    }
+    .anime-img-1,
+    .anime-img-2,
+    .anime-img-3,
+    .anime-img-4,
+    .anime-img-5,
+    .anime-img-6,
+    .anime-img-7,
+    .anime-img-8,
+    .anime-img-9,
+    .anime-img-10,
+    .anime-img-11,
+    .anime-img-12,
+    .anime-img-13,
+    .anime-img-14,
+    .anime-img-15,
+    .anime-img-16 {
+      max-height: 100%;
+    }
+    .anime-info {
+      width: 100%;
+      padding-left: 0;
+  }
+  .anime-info h2 {
+    text-align: center;
+  }
+  .img-portada {
+    width: 300px; 
+    height: auto;
+  }
+  .section-day, .section-week {
+    justify-content: center;
+    min-height: 850px;
+  }
+  .new-1 {
+    height: 480px;
+  }
+  }
+  
+  @media (max-width: 560px) { 
+    .section-day, .section-week { 
+      min-height: 960px;
+  }
+  .section-day, .section-week {
+    align-content: flex-start;
+    gap: 15px;
+  }
+  } 
+  
+  @media (max-width: 460px) { 
+    .img-portada {
+      width: auto;
+  }
+  .section-day, .section-week {
+    justify-content: center;
+    min-height: 1000px;
+  }
+  }
+  
+  @media (max-width: 430px) { 
+    .video-section h1 {
+      font-size: 15px;
+  }
+  .list-info {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 0;
+  }
+  .section-day, .section-week {
+    min-height: 1040px;
+  }
+  
+  }
+  
+  
+  
+  @media (max-width: 390px) { 
+    .img-portada {
+      width: 200px;
+  }
+  .anime-info {
+    width: 200px;
+  
+  }
+  .section-day, .section-week { 
+    min-height: 1100px;
+  }
+  .anime-info h2 {
+    font-size: 30px;
+  }
+  .new-1 {
+    height: 530px;
+  }
+  }
+  
+  @media (max-width: 360px) {
+    .img-portada {
+      width: 170px;
+  }
+  .anime-info {
+    width: 180px;
+  
+  }
+  .section-day, .section-week { 
+    min-height: 1090px;
+    padding: 10px;
+  }
+  
+  }
+  
+  
+  @media (max-width: 320px) {
+    .video-section {
+      margin: 0 10px;
+    } 
+    .grid-section {
+      margin: 0 10px;
+  }
+  .img-portada {
+    width: 250px;
+  }
+  .anime-info {
+    width: 100%; 
+  }
+  .section-day, .section-week {
+    min-height: 960px; 
+  }
+  }
