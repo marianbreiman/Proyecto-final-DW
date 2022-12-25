@@ -55,16 +55,18 @@ footer {
   flex-direction: column;
   padding: 15px;
   color: white; }
-
-footer p {
-  font-style: italic;
-  max-width: 60%;
-  margin: auto;
-  color: white; }
-
-footer img {
-  width: 60px;
-  height: 60px; }
+  footer p {
+    font-style: italic;
+    max-width: 60%;
+    margin: auto;
+    color: white; }
+  footer img {
+    width: 60px;
+    height: 60px; }
+  footer h4 {
+    background-image: linear-gradient(to right, #2f0000, #9e0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .logoFooter {
   display: flex;
@@ -73,11 +75,6 @@ footer img {
   align-items: center; }
 
 /**Acá estuve probando cositas para el futuro logo y titulo**/
-footer h4 {
-  background-image: linear-gradient(to right, #2f0000, #9e0000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
 .nav_Footer {
   list-style: none;
   display: flex;
@@ -138,6 +135,45 @@ footer h4 {
   width: 1.5rem;
   height: 100vh; }
 
+/* ANIME DEL DIA/SEMANA */
+.grid-section {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 50px auto;
+  grid-template-areas: "title1 title2" "section1 section2";
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #000000; }
+  .grid-section.grid-section .title-d {
+    grid-area: title1;
+    font-size: 25px;
+    color: whitesmoke; }
+  .grid-section.grid-section .section-day {
+    grid-area: section1; }
+  .grid-section.grid-section .title-w {
+    grid-area: title2;
+    font-size: 25px;
+    color: whitesmoke; }
+  .grid-section.grid-section .section-week {
+    grid-area: section2; }
+
+.section-day,
+.section-week {
+  background-color: #181818;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 605px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 15px;
+  padding: 20px;
+  color: white; }
+
 /* Contact Styling */
 .item-contact {
   position: relative;
@@ -147,80 +183,48 @@ footer h4 {
   align-items: center;
   margin-top: 10px;
   padding: 0; }
-
-.item-contact li {
-  position: relative;
-  list-style: none;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.5s; }
-
-.item-contact li:hover {
-  z-index: 10000;
-  transform: scale(0.75); }
-
-.item-contact li::before {
-  content: '';
-  position: absolute;
-  inset: 30px;
-  box-shadow: 0 0 0 10px var(--clr), 0 0 0 20px var(--bg), 0 0 0 22px var(--clr);
-  transition: 0.5s; }
-
-.item-contact li:hover::before {
-  inset: 0px; }
-
-.item-contact li::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--bg);
-  transform: rotate(45deg); }
-
-.item-contact li a {
-  position: relative;
-  text-decoration: none;
-  color: var(--clr);
-  z-index: 10;
-  font-size: 2em;
-  transition: 0.5s; }
-
-.item-contact li:hover a {
-  font-size: 3em;
-  filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr)); }
+  .item-contact.item-contact li {
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s; }
+  .item-contact.item-contact li:hover {
+    z-index: 10000;
+    transform: scale(0.75); }
+  .item-contact.item-contact li::before {
+    content: '';
+    position: absolute;
+    inset: 30px;
+    box-shadow: 0 0 0 10px var(--clr), 0 0 0 20px var(--bg), 0 0 0 22px var(--clr);
+    transition: 0.5s; }
+  .item-contact.item-contact li:hover::before {
+    inset: 0px; }
+  .item-contact.item-contact li::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--bg);
+    transform: rotate(45deg); }
+  .item-contact.item-contact li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--clr);
+    z-index: 10;
+    font-size: 2em;
+    transition: 0.5s; }
+  .item-contact.item-contact li:hover a {
+    font-size: 3em;
+    filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr)); }
 
 :root {
   --white: rgb(255, 255, 255);
   --black: rgb(18, 18, 18);
   --bg: rgb(18, 18, 18); }
-
-a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold; }
-
-.pantalla {
-  background-color: #000000;
-  width: 100%; }
-
-.botones {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.botones a {
-  font-size: 14px;
-  padding: 10px;
-  background-color: aliceblue;
-  color: black;
-  margin: 20px;
-  border-radius: 20px;
-  display: inline-block;
-  width: 100%;
-  text-align: center; }
 
 .Somos h1 {
   font-size: 25px;
@@ -239,14 +243,10 @@ a {
   max-width: 40%;
   color: white; }
 
-.Somos2 {
-  max-height: fit-content; }
-
-.Somos2 h4 {
-  padding: 0px 0px 10px 0px;
-  font-size: 50px;
-  font-weight: bolder;
-  animation: textin 10s infinite linear alternate; }
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold; }
 
 @keyframes textin {
   0% {
@@ -261,26 +261,41 @@ a {
     color: white;
     opacity: 1; } }
 
-.Somos2 p {
-  max-width: 100%;
-  color: white; }
+/*   INFO   */
+.anime-info {
+  width: 50%;
+  padding-left: 15px; }
+  .anime-info h2 a {
+    color: #e2e2e2; }
 
-.bi {
-  vertical-align: -.125em;
-  fill: currentColor; }
+.list-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  font-weight: lighter;
+  font-size: 11px;
+  color: #c5c5c5;
+  user-select: none;
+  padding: 3px 0 3px; }
+  .list-info div {
+    padding: 3px; }
 
-.animacione {
-  background-image: url(../img/Anime.jpg);
-  background-attachment: fixed;
-  background-size: 200% 100%;
-  min-height: 100vh;
-  animation: fondo 25s infinite linear alternate; }
+i {
+  margin-right: 5px; }
 
-@keyframes fondo {
-  from {
-    background-position: left; }
-  to {
-    background-position: right; } }
+.anime-info p {
+  font-size: 12px; }
+
+.Somos2 {
+  max-height: fit-content; }
+  .Somos2 h4 {
+    padding: 0px 0px 10px 0px;
+    font-size: 50px;
+    font-weight: bolder;
+    animation: textin 10s infinite linear alternate; }
+  .Somos2 p {
+    max-width: 100%;
+    color: white; }
 
 .quienesSomos {
   background-color: black;
@@ -292,10 +307,29 @@ a {
   align-items: center;
   display: flex;
   flex-direction: column; }
+  .quienesSomos h2 {
+    color: #fff;
+    animation: texto 15s infinite linear alternate; }
+  .quienesSomos h6 {
+    color: white; }
 
-.quienesSomos h2 {
-  color: #fff;
-  animation: texto 15s infinite linear alternate; }
+main h2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+
+.card-title {
+  color: #000000; }
+
+.card-text {
+  color: #000000; }
+
+.mainQuienes {
+  background-color: #000000; }
+  .mainQuienes h2 {
+    color: whitesmoke;
+    padding-top: 20px; }
 
 @keyframes texto {
   0% {
@@ -316,6 +350,7 @@ a {
 
 .artista img {
   width: 100%;
+  height: 220px;
   filter: saturate(0);
   border: 2px solid grey;
   border-radius: 20px; }
@@ -325,64 +360,7 @@ a {
   transform: scale(1.1);
   transition: 2s; }
 
-main h2 {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 10px; }
-
-.card-title {
-  color: #000000; }
-
-.card-text {
-  color: #000000; }
-
-.mainQuienes {
-  background-color: #000000; }
-
-/* ANIME DEL DIA/SEMANA */
-.grid-section {
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: 50px auto;
-  grid-template-areas: "title1 title2" "section1 section2";
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-  background-color: #000000; }
-
-.grid-section .title-d {
-  grid-area: title1;
-  font-size: 25px;
-  color: whitesmoke; }
-
-.grid-section .section-day {
-  grid-area: section1; }
-
-.grid-section .title-w {
-  grid-area: title2;
-  font-size: 25px;
-  color: whitesmoke; }
-
-.grid-section .section-week {
-  grid-area: section2; }
-
-.section-day,
-.section-week {
-  background-color: #181818;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 605px;
-  height: auto;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  position: relative;
-  border-radius: 15px;
-  padding: 20px;
-  color: white; }
-
+/*   Extras que van en varias paginas   */
 /*   IMG PORTADA   */
 .img-portada {
   width: 240px;
@@ -428,32 +406,55 @@ main h2 {
   100% {
     left: 125%; } }
 
-/*   INFO   */
-.anime-info {
+/*   IMG PORTA las series y manga   */
+.img-porta {
+  width: 240px;
+  height: 360px;
+  background-color: transparent;
+  float: left;
+  background-image: url("../img/haikyuu.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  overflow: hidden; }
+
+.img-porta a img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%; }
+
+.img-porta::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
   width: 50%;
-  padding-left: 15px; }
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg); }
 
-.anime-info h2 a {
-  color: #e2e2e2; }
+.img-porta:hover::before {
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
+  cursor: pointer; }
 
-.list-info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  font-weight: lighter;
-  font-size: 11px;
-  color: #c5c5c5;
-  user-select: none;
-  padding: 3px 0 3px; }
+.animacione {
+  background-image: url(../img/Anime.jpg);
+  background-attachment: fixed;
+  background-size: 200% 100%;
+  min-height: 100vh;
+  animation: fondo 25s infinite linear alternate; }
 
-.list-info div {
-  padding: 3px; }
-
-i {
-  margin-right: 5px; }
-
-.anime-info p {
-  font-size: 12px; }
+@keyframes fondo {
+  from {
+    background-position: left; }
+  to {
+    background-position: right; } }
 
 /* ANIME INFO */
 .serie {
@@ -916,50 +917,6 @@ i {
   font-weight: 500;
   font-family: "Ubuntu", "Roboto", sans-serif;
   color: #E8E8E8; }
-
-/*   IMG PORTADA   */
-.img-portada {
-  width: 240px;
-  height: 360px;
-  background-color: transparent;
-  float: left;
-  background-image: url("../img/kekkai-sensen.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-  overflow: hidden; }
-
-.img-portada a img {
-  width: 100%;
-  object-fit: cover; }
-
-.img-portada::before {
-  position: absolute;
-  top: 0;
-  left: -75%;
-  z-index: 2;
-  display: block;
-  content: '';
-  width: 50%;
-  height: 100%;
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  -webkit-transform: skewX(-25deg);
-  transform: skewX(-25deg); }
-
-.img-portada:hover::before {
-  -webkit-animation: shine .75s;
-  animation: shine .75s;
-  cursor: pointer; }
-
-@-webkit-keyframes shine {
-  100% {
-    left: 125%; } }
-
-@keyframes shine {
-  100% {
-    left: 125%; } }
 
 /*  RESPONSIVO  */
 @media (max-width: 1300px) {

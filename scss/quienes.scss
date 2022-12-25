@@ -1,0 +1,64 @@
+
+  .quienesSomos {
+    background-color: black; 
+    border-radius: 20px; 
+    opacity: 90%;
+    margin: auto;
+    padding: 60px;
+    width: 50%;
+    align-items: center;
+    display: flex;
+  flex-direction: column;
+
+  h2{
+    color: #fff;
+    animation: texto 15s infinite linear alternate;
+    }
+
+    h6 {
+        color: white;
+    }
+  }
+
+  main h2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .card-title {
+    color: #000000;
+  }
+  
+  .card-text {
+    color: #000000;
+  }
+  
+  
+  .mainQuienes {
+    background-color: #000000;
+
+    h2 {
+      color: whitesmoke;
+      padding-top: 20px;
+    }
+  }
+
+
+  
+  @keyframes texto {
+      0% {color: rgb(255, 255, 255); opacity: 1;}
+      25% {}
+      50% {color: red; opacity: 1;}
+      75% {}
+      100% {color: blue; opacity: 1}
+    }
+  
+  .artista {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+    .artista img { width: 100%; height: 220px; filter: saturate(0); border: 2px solid grey; border-radius: 20px;} 
+  .artista img:hover { filter: saturate(1); transform: scale(1.1); transition: 2s;} 
+  

@@ -65,17 +65,24 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    color: white; }
-  
-  footer p {
-    font-style: italic;
-    max-width: 60%;
-    margin: auto;
-    color: white; }
-  
-  footer img {
-    width: 60px;
-    height: 60px; }
+    color: white; 
+
+    p {
+      font-style: italic;
+      max-width: 60%;
+      margin: auto;
+      color: white; }
+
+      img {
+        width: 60px;
+        height: 60px; }
+
+        h4 {
+          background-image: linear-gradient(to right, #2f0000, #9e0000);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+        
+  }
   
   .logoFooter {
     display: flex;
@@ -83,12 +90,9 @@ footer {
     justify-content: center;
     align-items: center; }
   
+
   /**Acá estuve probando cositas para el futuro logo y titulo**/
-  footer h4 {
-    background-image: linear-gradient(to right, #2f0000, #9e0000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-  
+ 
   .nav_Footer {
     list-style: none;
     display: flex;
@@ -158,6 +162,60 @@ footer {
     width: 1.5rem;
     height: 100vh; }
 
+
+/* ANIME DEL DIA/SEMANA */
+  
+  
+.grid-section {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 50px auto;
+  grid-template-areas: 
+    "title1 title2"
+    "section1 section2";
+padding-top: 50px; 
+padding-left: 50px;
+padding-right: 50px;
+  background-color: #000000;
+
+    &.grid-section .title-d {
+  grid-area: title1;
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+&.grid-section .section-day {
+  grid-area: section1;
+}
+
+&.grid-section .title-w {
+  grid-area: title2;
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+&.grid-section .section-week {
+  grid-area: section2;
+}
+}
+
+.section-day,
+  .section-week {
+    background-color: #181818;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 605px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+  }
+
 /* Contact Styling */
   
 .item-contact {
@@ -168,58 +226,62 @@ footer {
   align-items: center;
   margin-top: 10px;
   padding: 0;
+
+  &.item-contact li {
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  &.item-contact li:hover {
+    z-index: 10000;
+    transform: scale(0.75);
+  }
+  
+  &.item-contact li::before {
+    content: '';
+    position: absolute;
+    inset: 30px;
+    box-shadow: 0 0 0 10px var(--clr), 0 0 0 20px var(--bg), 0 0 0 22px var(--clr);
+    transition: 0.5s;
+  }
+  
+  &.item-contact li:hover::before {
+    inset: 0px;
+  }
+  
+  &.item-contact li::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--bg);
+    transform: rotate(45deg);
+  }
+  
+  &.item-contact li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--clr);
+    z-index: 10;
+    font-size: 2em;
+    transition: 0.5s;
+  }
+  
+  &.item-contact li:hover a {
+    font-size: 3em;
+    filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+  }
+
 }
 
-.item-contact li {
-  position: relative;
-  list-style: none;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.5s;
-}
 
-.item-contact li:hover {
-  z-index: 10000;
-  transform: scale(0.75);
-}
 
-.item-contact li::before {
-  content: '';
-  position: absolute;
-  inset: 30px;
-  box-shadow: 0 0 0 10px var(--clr), 0 0 0 20px var(--bg), 0 0 0 22px var(--clr);
-  transition: 0.5s;
-}
-
-.item-contact li:hover::before {
-  inset: 0px;
-}
-
-.item-contact li::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--bg);
-  transform: rotate(45deg);
-}
-
-.item-contact li a {
-  position: relative;
-  text-decoration: none;
-  color: var(--clr);
-  z-index: 10;
-  font-size: 2em;
-  transition: 0.5s;
-}
-
-.item-contact li:hover a {
-  font-size: 3em;
-  filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
-}
 :root {
   --white: rgb(255, 255, 255);
   --black: rgb(18, 18, 18);
