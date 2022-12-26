@@ -409,10 +409,9 @@ main h2 {
 /*   IMG PORTA las series y manga   */
 .img-porta {
   width: 240px;
-  height: 360px;
+  height: 225px;
   background-color: transparent;
   float: left;
-  background-image: url("../img/haikyuu.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -420,9 +419,8 @@ main h2 {
   overflow: hidden; }
 
 .img-porta a img {
-  width: 100%;
   object-fit: cover;
-  height: 100%; }
+  width: 100%; }
 
 .img-porta::before {
   position: absolute;
