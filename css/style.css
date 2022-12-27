@@ -375,9 +375,10 @@ main h2 {
   overflow: hidden; }
 
 .img-portada a img {
-  width: 100%;
+  width: 240px;
+  height: 360px;
   object-fit: cover;
-  height: 100%; }
+  background-position: center; }
 
 .img-portada::before {
   position: absolute;
@@ -440,6 +441,30 @@ main h2 {
   -webkit-animation: shine .75s;
   animation: shine .75s;
   cursor: pointer; }
+
+.manime {
+  background-image: url("../img/manime.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%; }
+  .manime h1 {
+    color: white; }
+  .manime p {
+    color: lightgrey; }
+
+.mmanga {
+  background-image: url("../img/mmanga.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%; }
+  .mmanga h1 {
+    color: white; }
+  .mmanga p {
+    color: lightgrey; }
 
 .animacione {
   background-image: url(../img/Anime.jpg);
