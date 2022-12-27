@@ -360,52 +360,18 @@ main h2 {
   transform: scale(1.1);
   transition: 2s; }
 
-/*   Extras que van en varias paginas   */
-/*   IMG PORTADA   */
-.img-portada {
-  width: 240px;
-  height: 360px;
-  background-color: transparent;
-  float: left;
-  background-image: url("../img/kekkai-sensen.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-  overflow: hidden; }
+.animacione {
+  background-image: url(../img/Anime.jpg);
+  background-attachment: fixed;
+  background-size: 200% 100%;
+  min-height: 100vh;
+  animation: fondo 25s infinite linear alternate; }
 
-.img-portada a img {
-  width: 240px;
-  height: 360px;
-  object-fit: cover;
-  background-position: center; }
-
-.img-portada::before {
-  position: absolute;
-  top: 0;
-  left: -75%;
-  z-index: 2;
-  display: block;
-  content: '';
-  width: 50%;
-  height: 100%;
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  -webkit-transform: skewX(-25deg);
-  transform: skewX(-25deg); }
-
-.img-portada:hover::before {
-  -webkit-animation: shine .75s;
-  animation: shine .75s;
-  cursor: pointer; }
-
-@-webkit-keyframes shine {
-  100% {
-    left: 125%; } }
-
-@keyframes shine {
-  100% {
-    left: 125%; } }
+@keyframes fondo {
+  from {
+    background-position: left; }
+  to {
+    background-position: right; } }
 
 /*   IMG PORTA las series y manga   */
 .img-porta {
@@ -454,30 +420,51 @@ main h2 {
   .manime p {
     color: lightgrey; }
 
-.mmanga {
-  background-image: url("../img/mmanga.jpg");
+/*   IMG PORTADA   */
+.img-portada {
+  width: 240px;
+  height: 360px;
+  background-color: transparent;
+  float: left;
+  background-image: url("../img/kekkai-sensen.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  overflow: hidden;
-  width: 100%; }
-  .mmanga h1 {
-    color: white; }
-  .mmanga p {
-    color: lightgrey; }
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  overflow: hidden; }
 
-.animacione {
-  background-image: url(../img/Anime.jpg);
-  background-attachment: fixed;
-  background-size: 200% 100%;
-  min-height: 100vh;
-  animation: fondo 25s infinite linear alternate; }
+.img-portada a img {
+  width: 240px;
+  height: 360px;
+  object-fit: cover;
+  background-position: center; }
 
-@keyframes fondo {
-  from {
-    background-position: left; }
-  to {
-    background-position: right; } }
+.img-portada::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg); }
+
+.img-portada:hover::before {
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
+  cursor: pointer; }
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%; } }
+
+@keyframes shine {
+  100% {
+    left: 125%; } }
 
 /* ANIME INFO */
 .serie {
@@ -1175,3 +1162,24 @@ main h2 {
     width: 100%; }
   .section-day, .section-week {
     min-height: 960px; } }
+
+/*   Extras que van en varias paginas   */
+.spyy {
+  background-image: url("../img/spyy.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%; }
+
+.noticias {
+  color: white;
+  background-color: #000; }
+
+.p-4 {
+  color: black;
+  background-color: whitesmoke; }
+
+.p-4 ol li a {
+  color: #141414;
+  text-decoration: none; }

@@ -62,3 +62,25 @@
     .artista img { width: 100%; height: 220px; filter: saturate(0); border: 2px solid grey; border-radius: 20px;} 
   .artista img:hover { filter: saturate(1); transform: scale(1.1); transition: 2s;} 
   
+
+
+  .animacione {
+    background-image: url(../img/Anime.jpg);
+    background-attachment:fixed;
+    background-size: 200% 100%;
+    min-height: 100vh;
+    animation: fondo 25s infinite linear alternate;
+  }
+  
+  @keyframes fondo {
+    from {
+        background-position:  left;
+    }
+  
+    to {
+        background-position: right ;
+    }
+  }
+  
+  
+  

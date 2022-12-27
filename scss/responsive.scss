@@ -1,0 +1,339 @@
+
+  
+  /*  RESPONSIVO  */
+  
+  @media (max-width: 1300px) {
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+          grid-template-areas:
+          "title1"
+          "section1"
+          "title2"
+          "section2";
+      margin: 0 130px;
+    }
+    .section-day, .section-week {
+      width: 100%;
+    }
+    .anime-info {
+      width: 80%; 
+  }
+  .img-portada {
+    width: 150px;
+    height: 225px;
+  }.section-day, .section-week {
+    width: 100%;
+    height: 250px;
+  }
+  .grid-section h1.title-w {
+    margin: 20px 0;
+  }
+  .new-1 {
+    height: 500px;
+  }
+  }
+  
+  @media (max-width: 1170px) { 
+    .header {
+      margin: 25px 50px 0 50px;
+    }
+    .video-section {
+      margin: 0 50px;
+    } 
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+          grid-template-areas:
+          "title1"
+          "section1"
+          "title2"
+          "section2";
+      margin: 0 50px;
+  }
+  .grid-section .title-d {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .section-day, .section-week {
+    margin: 0 0;
+    width: 100%;
+    min-height: 480px;
+    padding: 20px;
+  }
+  .grid-section .title-w {
+    grid-area: title2;
+    margin-left: 0px;
+    margin-bottom: 0;
+  }
+  .img-portada {
+    width: 30%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+  }
+  .img-portada div a img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .anime-info {
+    width: 70%;
+    height: 368px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .anime-info h2 {
+    margin-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 10px;
+  }
+  .anime-info p {
+    margin-left: 0;
+    font-size: 15px;
+    padding-right: 0px;
+    line-height: 25px;
+  }
+  .list-info {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .img-carousel {
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  .img-carousel div {
+    width: 195px;
+    min-height: 110px;
+  }
+  
+  .list-genero {
+    margin-top: 20px;
+  }
+  
+  .list-genero li {
+    font-size: 15px;
+  }
+  .grid-section .title-w { 
+    margin: 40px 0 10px 0;
+  }
+  .grid-new {
+    margin: 0 50px;
+    margin-bottom: 60px;
+  }
+  
+  }
+  
+  @media (max-width: 1009px) { 
+    .container-video-links {
+      grid-template-columns: repeat(auto-fill, minmax(70px, 250px));
+      gap: 10px;
+    }
+    .new-1 {
+      height: 530px;
+  }
+  }
+  
+  @media (max-width: 960px) { 
+    .section-day, .section-week {
+      margin: 0 0;
+      width: auto;
+      min-height: 390px;
+      padding: 20px;
+  }
+  .new-1 {
+    height: 600px;
+  }
+  }
+  
+  @media (max-width: 887px) { 
+    .container-video-links {
+      grid-template-columns: repeat(auto-fill, minmax(70px, 234px));
+      gap: 20px;
+    }
+    .img-new1 div a img {
+      width: 100%;
+  }
+  .grid-new {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  }
+  
+  @media (max-width: 859px) { 
+    .container-video-links {
+      grid-template-columns: repeat(auto-fit, minmax(70px, 210px));
+      gap: 5px;
+    }
+    .section-day, .section-week {
+      margin: 0 0;
+      width: auto;
+      min-height: 440px;
+      padding: 20px;
+  }
+  
+  }
+  
+  @media (max-width: 757px) { 
+    .container-video-links {
+      grid-template-columns: repeat(auto-fit, minmax(70px, 260px));
+      gap: 5px;
+    }
+  
+  }
+  
+  @media (max-width: 642px) { 
+    .container-video-links {
+      grid-template-columns: repeat(auto-fit, minmax(70px, 245px));
+      gap: 10px;
+    }
+    .section-day, .section-week {
+      margin: 0 0;
+      width: auto;
+      min-height: 530px;
+      padding: 20px;
+  }
+  
+  }
+  
+  @media (max-width: 612px) { 
+    .container-video-links {
+      grid-template-columns: repeat(auto-fit, minmax(70px, 100%));
+      gap: 30px;
+    }
+    .anime-img-1,
+    .anime-img-2,
+    .anime-img-3,
+    .anime-img-4,
+    .anime-img-5,
+    .anime-img-6,
+    .anime-img-7,
+    .anime-img-8,
+    .anime-img-9,
+    .anime-img-10,
+    .anime-img-11,
+    .anime-img-12,
+    .anime-img-13,
+    .anime-img-14,
+    .anime-img-15,
+    .anime-img-16 {
+      max-height: 100%;
+    }
+    .anime-info {
+      width: 100%;
+      padding-left: 0;
+  }
+  .anime-info h2 {
+    text-align: center;
+  }
+  .img-portada {
+    width: 300px; 
+    height: auto;
+  }
+  .section-day, .section-week {
+    justify-content: center;
+    min-height: 850px;
+  }
+  .new-1 {
+    height: 480px;
+  }
+  }
+  
+  @media (max-width: 560px) { 
+    .section-day, .section-week { 
+      min-height: 960px;
+  }
+  .section-day, .section-week {
+    align-content: flex-start;
+    gap: 15px;
+  }
+  } 
+  
+  @media (max-width: 460px) { 
+    .img-portada {
+      width: auto;
+  }
+  .section-day, .section-week {
+    justify-content: center;
+    min-height: 1000px;
+  }
+  }
+  
+  @media (max-width: 430px) { 
+    .video-section h1 {
+      font-size: 15px;
+  }
+  .list-info {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 0;
+  }
+  .section-day, .section-week {
+    min-height: 1040px;
+  }
+  
+  }
+  
+  
+  
+  @media (max-width: 390px) { 
+    .img-portada {
+      width: 200px;
+  }
+  .anime-info {
+    width: 200px;
+  
+  }
+  .section-day, .section-week { 
+    min-height: 1100px;
+  }
+  .anime-info h2 {
+    font-size: 30px;
+  }
+  .new-1 {
+    height: 530px;
+  }
+  }
+  
+  @media (max-width: 360px) {
+    .img-portada {
+      width: 170px;
+  }
+  .anime-info {
+    width: 180px;
+  
+  }
+  .section-day, .section-week { 
+    min-height: 1090px;
+    padding: 10px;
+  }
+  
+  }
+  
+  
+  @media (max-width: 320px) {
+    .video-section {
+      margin: 0 10px;
+    } 
+    .grid-section {
+      margin: 0 10px;
+  }
+  .img-portada {
+    width: 250px;
+  }
+  .anime-info {
+    width: 100%; 
+  }
+  .section-day, .section-week {
+    min-height: 960px; 
+  }
+  }
