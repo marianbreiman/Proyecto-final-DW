@@ -23,9 +23,9 @@
   <header class="header_principal">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="container">
-        <div class="logo">
-          <img src="../img/logo.png" alt="logo" class="logo" href="../index.html" />
-        </div>
+        <a href="../index.html" class="logo">
+          <img src="../img/logo.png" alt="logoz" class="logo" href="../index.html" />
+        </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,33 +72,38 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.953091955669!2d135.3461713146425!3d34.807121980407274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f46854067635%3A0x953298271337ce3e!2sThe%20Osamu%20Tezuka%20Manga%20Museum!5e0!3m2!1ses-419!2sco!4v1583633795055!5m2!1ses-419!2sco"
           frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
+
+
         <div class="col-md-10 mx-auto col-lg-5">
-          <form class="p-4 p-md-5 border rounded-3" style="background-color: rgb(18, 18, 18); color: white;">
-              <fieldset>
-                  <legend>Datos básicos</legend>
+         
+          <fieldset>
+         
+          <form class="p-4 p-md-5 border rounded-3" style="background-color: rgb(18, 18, 18);">
+
+
+
+            
+        
+                  <legend style="color: whitesmoke;">Datos para contacto</legend>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Correo eléctronico</label>
+                    </div>
+
                   <div>
-                      <label for="nombre">Nombre</label>
-                      <input type="text" id="nombre" name="nombre">
-                  </div>
-                  <div>
-                      <label for="email">E-mail</label>
-                      <input type="email" id="email" name="email">
-                  </div>
+                    <label style="font-size: 18px; color: whitesmoke;" for="">Comentarios</label><br>
+                    <textarea name="comentarios" style="width: 100%;"></textarea>
+                </div>
+                <button style="margin-top: 10px;" class="w-100 btn btn-outline-light"  type="submit">Enviar</button>
+            </form>
+      
               </fieldset>
-              <div>
-                  <label>¿Qué te parecio nuestra pagina?</label><br>
-                  <input type="checkbox" name="opcion1" value="Opcion 1"> ¡Me encanto!
-                  <input type="checkbox" name="opcion2" value="Opcion 2"> Me gusto
-                  <input type="checkbox" name="opcion3" value="Opcion 3">Mas o menos
-                  <input type="checkbox" name="opcion4" value="Opcion 4">Por mejorar
-                  <input type="checkbox" name="opcion5" value="Opcion 5">No me gusto
-              </div>
-              <div>
-                  <label for="">Comentarios</label><br>
-                  <textarea name="comentarios"></textarea>
-              </div>
-              <a href="#" button type="button" class="btn btn-outline-light" style="margin-bottom: 10px;">Enviar</a>
-          </form>
+
+   
         </div>
       </div>
     </div>
@@ -113,26 +118,35 @@
       <h4>Manía</h4>
     </div>
  
-    <nav class="conteiner">
-      <Div class="nav_Footer">
-          <ul class="nav_Footer ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Quienes somos.html">Quiénes somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Series.html">Series</a>
-            </li>
-            <li class="nav-item"> <a class="nav-link" href="Noticias.html">Noticias</a>
-            </li>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container" style="justify-content: center;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <Div class="nav_principal">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Quienes somos.html">Quiénes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Series.html">Series</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link" href="Noticias.html">Noticias</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+  
+          </Div>
+        </div>
+      </div>
     </nav>
     
     <ul class="item-contact conteiner">

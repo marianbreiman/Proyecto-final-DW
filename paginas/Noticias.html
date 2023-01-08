@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manía</title>
+  <meta name="description" content="Este sitio fue realizado para el curso de Coderhouse ">
   <link rel="stylesheet" href="../css/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -22,17 +23,17 @@
 <body>
 
   <header class="header_principal">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark " >
       <div class="container">
-        <div class="logo">
+        <a href="../index.html" class="logo">
           <img src="../img/logo.png" alt="logoz" class="logo" href="../index.html" />
-        </div>
+        </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <Div class="nav_principal">
+        <Div class="nav_principal" >
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -117,75 +118,75 @@
       </div>
 
 
-      <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Custom cards</h2>
+      <div class="container px-4 " id="icon-grid">
+        <h2 class="pb-2 border-bottom" style="color: whitesmoke;">Los mejores animes según el rating</h2>
     
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                    <small>Earth</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                    <small>3d</small>
-                  </li>
-                </ul>
-              </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+
+          <div class="col d-flex align-items-start">
+            <img src="../img/dragoni.png" class="bi text-muted flex-shrink-0 me-3" style= "width:3em; height: 3em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4" style="color: white;">1. Dragon ball</h3>
+              <a href="#" class="ver">Ver anime</a>
             </div>
           </div>
-    
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                    <small>Pakistan</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                    <small>4d</small>
-                  </li>
-                </ul>
-              </div>
+          <div class="col d-flex align-items-start">
+            <img src="../img/tomoe.ico" class="bi text-muted flex-shrink-0 me-3" style= "width:3em; height: 3em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4" style="color: white;">2. Naruto</h3>
+              <a href="#" class="ver">Ver anime</a>
             </div>
           </div>
-    
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                    <small>California</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                    <small>5d</small>
-                  </li>
-                </ul>
-              </div>
+
+          <div class="col d-flex align-items-start">
+            <img src="../img/poke.png" class="bi text-muted flex-shrink-0 me-3" style= "width:3em; height: 3em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4" style="color: white;">3. Pokemon</h3>
+              <a href="#" class="ver">Ver anime</a>
             </div>
           </div>
+
+          <div class="col d-flex align-items-start">
+            <img src="../img/hero.png" class="bi text-muted flex-shrink-0 me-3" style= "width:3em; height: 3em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4" style="color: white;">4. Boku no hero</h3>
+              <a href="#" class="ver">Ver anime</a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img src="../img/clover.jpg" class="bi text-muted flex-shrink-0 me-3" style= "width:3em; height: 3em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4" style="color: white;">5. Black clover</h3>
+              <a href="#" class="ver">Ver anime</a>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <img src="../img/blue.png" class="bi text-muted flex-shrink-0 me-3" style= "width:3em; height: 3em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4" style="color: white;">6. Blue lock</h3>
+              <a href="#" class="ver">Ver anime</a>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <img src="../img/ashi.png" class="bi text-muted flex-shrink-0 me-3" style= "width:3em; height: 3em"">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4" style="color: white;">7. Ao ashi</h3>
+              <a href="#" class="ver">Ver anime</a>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <img src="../img/titan.png" class="bi text-muted flex-shrink-0 me-3" style= "width:3em; height: 3em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4" style="color: white;">8. Attack on titan</h3>
+              <a href="#" class="ver">Ver anime</a>
+            </div>
+          </div>
+
         </div>
       </div>
-
   
     <div class="row g-5">
       <div class="col-md-8">
@@ -193,9 +194,9 @@
           Las noticias más relevantes
         </h3>
        
-        <article class="blog-post">
+        <article class="blog-post" style="color: white;">
           <h2 class="blog-post-title mb-1">El creador de One Piece tranquiliza a los fans: la serie live-action “realmente luce genial”</h2>
-          <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+          <p class="blog-post-meta">05 de Junio, 2022 por <a href="#" class="verd">Mateo Lescano</a></p>
     
           <p>Eiichiro Oda comparte un comunicado tras la Jump Festa 2023 explicando el presente y futuro de la franquicia, además de garantizar el buen hacer de Netflix.</p>
           <hr>
@@ -204,91 +205,77 @@
        
         </article>
   
-        <article class="blog-post">
+        <article class="blog-post" style="color: white;">
           <h2 class="blog-post-title mb-1">La verdad tras Sand Land de Akira Toriyama: será un anime y ya tenemos su primer tráiler</h2>
-          <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+          <p class="blog-post-meta">23 de Diciembre, 2021 por <a href="#" class="verd">Martín Nava</a></p>
   
-          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+
+          <p>Bandai Namco confirma que el misterioso Sand Land Project en realidad es un anime basado en el propio manga de Toriyama, descartando el rumoreado juego.</p>
           <blockquote>
-            <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+            <p>   Ya es oficial; el misterioso Sand Land Project de Bandai Namco Entertainment en realidad es un anime basado en el manga del mismo nombre de <strong>Akira Toriyama, el famoso creador de mangas tan influyentes como Dragon Ball o Dr. Slump,</strong> entre otros. Así lo han confirmado sus propios responsables a través de un primer teaser tráiler que podéis ver sobre estas líneas y que nos deja ver al fin el estilo de esta nueva adaptación de un manga al formato animado.</p>
           </blockquote>
-          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-          <h3>Example table</h3>
-          <p>And don't forget about tables in these posts:</p>
-          <table class="table">
+
+   
+          <h3 style="color: white;">Ranking de los mejores personajes</h3>
+           <table class="table" style="color: white;">
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Upvotes</th>
-                <th>Downvotes</th>
+                <th>Nombre</th>
+                <th>Anime</th>
+                <th>votos</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Alice</td>
-                <td>10</td>
-                <td>11</td>
+                <td>Itachi Uchiha</td>
+                <td>Naruto</td>
+                <td>1.000.000.000</td>
               </tr>
               <tr>
-                <td>Bob</td>
-                <td>4</td>
-                <td>3</td>
+                <td>Isagi Yoichi</td>
+                <td>Blue lock</td>
+                <td>750.000.000</td>
               </tr>
               <tr>
-                <td>Charlie</td>
-                <td>7</td>
-                <td>9</td>
+                <td>Son Goku</td>
+                <td>Dragon ball</td>
+                <td>500.000.000</td>
               </tr>
             </tbody>
-            <tfoot>
-              <tr>
-                <td>Totals</td>
-                <td>21</td>
-                <td>23</td>
-              </tr>
-            </tfoot>
+
           </table>
-  
-          <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+ 
         </article>
-  
-        <article class="blog-post">
-          <h2 class="blog-post-title mb-1">New feature</h2>
-          <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
-  
-          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-          <ul>
-            <li>First list item</li>
-            <li>Second list item with a longer description</li>
-            <li>Third list item to close it out</li>
-          </ul>
-          <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-        </article>
-  
+        <div class="d-flex flex-column flex-sm-row py-4 border-top" style="justify-content: center; display: flex; margin-top: 20px; ">
+          <a href="#" > <button type="button" class="btn btn-outline-light" >Ver más noticias</button> </a> 
+        </div>
+
+    
       </div>
   
+      
       <div class="col-md-4">
         <div class="position-sticky" style="top: 2rem;">
           <div class="p-4 mb-3 bg-light rounded">
-            <h4 class="fst-italic">About</h4>
-            <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+            <h4 class="fst-italic">Lo último de cada serie</h4>
+            <p class="mb-0">Al seleccionar cualquiera de los siguientes links vas a poder enterarte de las ultimas novedades de los animes que más te interesen. ¡¿Que estas esperando?!</p>
           </div>
   
           <div class="p-4" style="border-radius: 10px;">
             <h4 class="fst-italic">Series</h4>
             <ol class="list-unstyled mb-0" >
-              <li><a href="#">Spy x family</a></li>
-              <li><a href="#">Dragon ball</a></li>
-              <li><a href="#">Death Note</a></li>
-              <li><a href="#">Naruto</a></li>
-              <li><a href="#">Black clover</a></li>
-              <li><a href="#">Boku no hero</a></li>
-              <li><a href="#">Kimetsu no yaiba</a></li>
-              <li><a href="#">Haikyuu</a></li>
-              <li><a href="#">Attack on titan</a></li>
-              <li><a href="#">Odd taxi</a></li>
-              <li><a href="#">kekkai-sensen</a></li>
-              <li><a href="#">Sword art online</a></li>
+              <li ><a href="#" class="verd">Spy x family</a></li>
+              <li><a href="#" class="verd">Dragon ball</a></li>
+              <li><a href="#" class="verd">Death Note</a></li>
+              <li><a href="#" class="verd">Naruto</a></li>
+              <li><a href="#" class="verd">Black clover</a></li>
+              <li><a href="#" class="verd">Boku no hero</a></li>
+              <li><a href="#" class="verd">Kimetsu no yaiba</a></li>
+              <li><a href="#" class="verd">Haikyuu</a></li>
+              <li><a href="#" class="verd">Attack on titan</a></li>
+              <li><a href="#" class="verd">Odd taxi</a></li>
+              <li><a href="#" class="verd">kekkai-sensen</a></li>
+              <li><a href="#" class="verd">Sword art online</a></li>
             </ol>
           </div>
   
@@ -307,26 +294,35 @@
       <h4>Manía</h4>
     </div>
  
-    <nav class="conteiner">
-      <Div class="nav_Footer">
-          <ul class="nav_Footer ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Quienes somos.html">Quiénes somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Series.html">Series</a>
-            </li>
-            <li class="nav-item"> <a class="nav-link" href="Noticias.html">Noticias</a>
-            </li>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container" style="justify-content: center;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <Div class="nav_principal">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Quienes somos.html">Quiénes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Series.html">Series</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link" href="Noticias.html">Noticias</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+  
+          </Div>
+        </div>
+      </div>
     </nav>
     
     <ul class="item-contact conteiner">

@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manía</title>
+  <meta name="description" content="Este sitio fue realizado para el curso de Coderhouse de desarrollo web. Decidi realizar el sitio sobre una pagina de animes y mangas personal junto con un blog de noticias">
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -20,11 +21,11 @@
 <body>
 
   <header class="header_principal">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark " >
       <div class="container">
-        <div class="logo">
-          <img src="./img/logo.png" alt="logo" class="logo" href="index.html" />
-        </div>
+        <a href="index.html" class="logo">
+          <img src="../img/logo.png" alt="logo de la pagina Animeverse" class="logo" href="../index.html" />
+        </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,38 +72,38 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="1000">
-        <img src="img/carrusel1.jpg" class="d-block w-100" alt="...">
+        <img src="img/carrusel1.jpg" class="d-block w-100" alt="Primer carrusel de la pagina animeverse">
 
         <div class="carousel-caption d-none d-md-block"
           style="background-color: black; border-radius: 20px; opacity: 80%;  ">
           <h5>Welcome to the Animeverse</h5>
-          <p>En este sitio podrás encontrar todo el anime que deseas ver y leer todo el manga que pueda interesarte...
+          <p style="width: 60%; margin: auto;">El mejor sitio donde podrás encontrar todo el anime que deseas ver y leer todo el manga que puedas directo de nuestra selección especial.
           </p>
           <div style="justify-content: center; display: flex;margin: 10px; ">
-            <a href="#" > <button type="button" class="btn btn-outline-light" >Ver más</button> </a> 
+            <a href="paginas/Noticias.html" > <button type="button" class="btn btn-outline-light" >Las noticias más recientes</button> </a> 
           </div>
         </div>
       </div>
 
       <div class="carousel-item" data-bs-interval="1000" >
-        <img src="img/carrusel2.png" class="d-block w-100" alt="...">
+        <img src="img/carrusel2.png" class="d-block w-100" alt="Segundo carrusel de la pagina animeverse">
         <div class="carousel-caption d-none d-md-block" 
         style="background-color: black; border-radius: 20px; opacity: 80%;  ">
           <h5>Disfruta de los mejores animes</h5>
           <p>En este mundo podrás disfrutar de todo el anime que desees ver.</p>
           <div style="justify-content: center; display: flex;margin: 10px; ">
-            <a href="#" > <button type="button" class="btn btn-outline-light" >Ver más</button> </a> 
+            <a href="paginas/Series.html" > <button type="button" class="btn btn-outline-light" >Ver más</button> </a> 
           </div>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="img/carrusel3.jpg" class="d-block w-100" alt="...">
+        <img src="img/carrusel3.jpg" class="d-block w-100" alt="Tercer carrusel de la pagina animeverse">
         <div class="carousel-caption d-none d-md-block"
         style="background-color: black; border-radius: 20px; opacity: 80%;  ">
         <h5>Disfruta de los mejores mangas</h5>
         <p>En este mundo podrás disfrutar de todo el manga que desees leer.</p>
           <div style="justify-content: center; display: flex;margin: 10px; ">
-            <a href="#" > <button type="button" class="btn btn-outline-light" >Ver más</button> </a> 
+            <a href="paginas/Series.html" > <button type="button" class="btn btn-outline-light" >Ver más</button> </a> 
           </div>
         </div>
       </div>
@@ -250,26 +251,35 @@
       <h4>Manía</h4>
     </div>
  
-    <nav class="conteiner">
-      <Div class="nav_Footer">
-          <ul class="nav_Footer ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="paginas/Quienes somos.html">Quiénes somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="paginas/Series.html">Series</a>
-            </li>
-            <li class="nav-item"> <a class="nav-link" href="paginas/Noticias.html">Noticias</a>
-            </li>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container" style="justify-content: center;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <Div class="nav_principal">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/Quienes somos.html">Quiénes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/Series.html">Series</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link" href="paginas/Noticias.html">Noticias</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="paginas/contacto.html">Contacto</a>
-            </li>
-          </ul>
-
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+              </li>
+            </ul>
+  
+          </Div>
+        </div>
+      </div>
     </nav>
     
     <ul class="item-contact conteiner">

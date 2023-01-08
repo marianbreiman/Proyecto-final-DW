@@ -37,4 +37,29 @@
   }
   
   
-  
+.ver{
+    color: darkgrey;
+    text-decoration: none;
+
+    &:hover{
+      color: grey;
+    }
+  }
+  .verd{
+    color: lightseagreen;
+    text-decoration: none;
+
+    &:hover{
+      color: seagreen;
+    }
+  }
+
+
+  label {
+    width: 100%;
+ 
+  }
+  input {
+    color: whitesmoke;
+    width: 100%;
+  }
